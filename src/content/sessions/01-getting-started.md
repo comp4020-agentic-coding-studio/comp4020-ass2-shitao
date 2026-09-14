@@ -1,36 +1,47 @@
 ---
-title: Getting started
+title: First marks
 description:
-  The first session of the semester — what to have working before you arrive,
-  and what happens once you do
+  The first studio — what to have working before you arrive, and the
+  smallest possible instrument you'll build once you do
 week: 1
 date: 2027-02-22
 teachers:
   - marisol-quaye
 spec:
-  - your development environment runs the course's toolchain
-  - you can build and preview the site locally
-  - you have something, however rough, to show the class
+  - your development environment runs the course's toolchain and the page loads locally
+  - moving a pointer over a canvas draws something, however crude
+  - you can name the one thing about your own build you don't yet understand
+related:
+  - lectures/week-01
 ---
 
-<!-- STARTER_CONTENT: replace this session, then remove this comment. -->
+Bring a laptop with the toolchain installed and nothing else. There is no
+brief to read in advance, because the first thing this course teaches is that
+a brief written in words is not the same as a brief you can feel through a
+pointer.
 
-Replace this page. A session brief tells a student three things: what to bring,
-what will happen, and how to tell afterwards whether it went well.
+## Before the studio
 
-## Before the session
+Get the toolchain running and confirm the page loads. That's the whole
+preparation --- there's no reading, because the point of this studio is that
+you arrive without a plan for what the instrument should do and leave with
+one.
 
-The `spec` above is the contract. Write each line so a reader can tell whether
-it has been met without asking you --- that is the difference between a spec and
-a wish.
+## In the studio
 
-## In the session
+You'll build the smallest possible thing that counts as an instrument: a
+canvas, and a line that follows wherever the pointer goes. No brush width, no
+colour, no meaning --- just the one continuous gesture that everything later
+in the semester complicates. Shitao's own treatise on painting opens the same
+way, four centuries early: before technique, before style, there is the single
+stroke, and everything a hand does afterwards is a variation on it. This
+studio is that idea, in code, on a screen that talks back.
 
-Say how the time is actually spent, in the order it happens. If the session runs
-to a repeating shape --- a demo, then feedback, then work time --- name the
-parts and say roughly how long each takes. Students plan against it.
+By the end, get it running well enough to hand your laptop to the person next
+to you and watch what they do with it that you didn't expect.
 
 ## Afterwards
 
-Say what leaves the session: a mark, a piece of feedback, a decision about the
-next week's work.
+Keep the build. Next week's studio starts by showing it to the room, and the
+one thing you're least sure about is more useful to bring than the thing
+that's working.

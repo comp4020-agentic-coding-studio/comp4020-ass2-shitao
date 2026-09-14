@@ -1,36 +1,37 @@
 ---
 title: First review
 description:
-  The second session, where work made in week 1 meets an audience for the first
-  time
+  The second studio, where the mark made in week 1 meets a hand that isn't
+  yours for the first time
 week: 2
 date: 2027-03-01
 teachers:
   - idris-fenn
 spec:
-  - work from week 1 is running and can be shown in under two minutes
+  - your week 1 build is running and can be shown in under two minutes with no setup
   - you can name the one decision you are least sure about
 related:
-  - assessments/assignment-1
+  - assessments/first-instrument
 ---
 
-<!-- STARTER_CONTENT: replace this session, then remove this comment. -->
+## Before the studio
 
-Replace this page. It is here so the sessions listing sorts by week, the detail
-route renders a second spec, and the related block has an edge into the
-assessment collection.
+Bring the build from week 1, running, and the one decision about it you're
+least sure of. Not the thing you're proudest of --- the thing you'd change if
+someone gave you a good enough reason.
 
-## Before the session
+## In the studio
 
-Bring the work from week 1 and the one decision you are least sure about.
-
-## In the session
-
-Short demos, then feedback aimed at the decision rather than the polish. What
-makes a review worth attending is that the feedback changes what someone does
-next, so build in the time to act on it.
+Every studio from here follows the same shape: a short demo, then feedback
+aimed at the uncertain decision rather than at polish. Four minutes per
+person is enough to show a build and hear what a stranger's hand actually does
+with it, which is nearly always different from what you rehearsed in your
+head. This is the format every studio for the rest of the semester repeats,
+including the crit that marks [First Instrument](/assessments/first-instrument/)
+in week 6, so it's worth getting comfortable with the shape now, while nothing
+is graded yet.
 
 ## Afterwards
 
-If attendance or participation is worth marks, say so here and link the rule to
-the [assessment page](/assessments/) rather than restating it.
+Take one piece of feedback and act on it before the next studio, even if it's
+small. The habit that matters is closing the loop, not accumulating notes.
