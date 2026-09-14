@@ -1,46 +1,53 @@
 ---
-title: Assignment 1
+title: First Instrument
 description:
-  The first piece of graded work — a placeholder brief showing the shape every
-  assessment page follows
+  A working mark-making instrument, built to one deliberate constraint and
+  handed to someone who has never seen it before
 week: 6
-due: 2027-04-12T12:00:00+10:00
-weight: 40
+due: 2027-03-29T12:00:00+11:00
+weight: 35
 marking:
   mode: weighted
   criteria:
-    - name: Response to the brief
-      weight: 60
-    - name: Quality of execution
-      weight: 40
+    - name: Response to the constraint
+      weight: 50
+    - name: Craft of the interaction
+      weight: 50
 spec:
-  - submitted by the deadline, in the format named below
-  - it does the thing the brief asks for, and a reader can tell that it does
-  - the work is yours, with any assistance declared
+  - submitted by the deadline as a link to a running build, plus the source repository
+  - runs standalone in a fresh browser tab, with no explanation or setup from you
+  - enforces exactly one deliberate constraint (from studio 4), and you can demonstrate the instrument with it removed
+  - reads at least one signal derived from motion over time (from studio 3), not only raw position
 related:
-  - final-project
+  - assessments/exhibition-piece
 ---
-
-<!-- STARTER_CONTENT: replace this assessment brief, then remove this comment. -->
-
-Replace this brief. An assessment page has three jobs: pose the problem, say
-what is submitted, and say how it is marked.
 
 ## The brief
 
-> One sentence stating the problem, set as a blockquote so it reads as the thing
-> being asked rather than as commentary on it.
+> Build one small instrument for making a mark, hold it to exactly one
+> constraint, and make it survive a stranger's hands with nobody there to
+> explain it.
 
-Then a paragraph or two on what makes a strong response --- the room the brief
-leaves, and the judgement it is testing. Keep the provocation and the mechanics
-apart: a student should be able to read the first and know what to make, and
-read the second and know what to hand in.
+This is the first five weeks' work --- reading gesture as more than a
+position, choosing one constraint and holding it, adding a state that moves on
+its own --- brought together into something that has to work without its
+author in the room. The room in studio 6 is the actual marking condition: a
+build that only ever worked while you were narrating it out loud doesn't meet
+the brief, whatever it looks like in a screen recording.
+
+What makes a strong response isn't a longer feature list. It's a constraint
+that costs something real when it's on, and reads clearly as a difference when
+it's off --- the toggle from studio 4 is the easiest way to prove that in the
+room.
 
 ## What you submit
 
-Name the artefact and the format. If evidence of process is part of the
-submission, say which files and what each is for.
+A link to the deployed build and the source repository. If the constraint or
+the gesture signal isn't obvious within the first few seconds of use, add one
+sentence of context to the repository's README --- not more, since an
+instrument that needs paragraphs of explanation hasn't yet earned the crit
+format this course runs on.
 
-The optional `marking:` block renders a criterion table (weighted) or a marking
-statement (holistic) below; leave it out and say how the work is marked in
-prose.
+The weighted criteria above split evenly between whether the constraint says
+something (response to the brief) and whether the build itself holds together
+under a stranger's hands (craft).

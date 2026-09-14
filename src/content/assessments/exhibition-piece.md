@@ -1,38 +1,48 @@
 ---
-title: Final project
+title: Exhibition Piece
 description:
-  The capstone — a placeholder brief for the larger piece of work the semester
-  builds towards
+  The capstone — an instrument staged to run unattended, for a viewer who
+  gets no explanation and no help
 week: 12
-due: 2027-05-28T12:00:00+10:00
-weight: 60
+due: 2027-05-21T12:00:00+10:00
+weight: 50
 marking:
   mode: holistic
   description:
-    The final project is judged as a whole against the brief, with particular
-    attention to whether the result stands alone and whether its scope fits the
-    semester that produced it.
+    Judged as a whole against the brief, with particular weight on whether the
+    piece survives running unattended for the length of the final studio, and
+    whether the semester's constraint, decay and failure-as-material work (or
+    a considered subset of it) reads as one coherent instrument rather than a
+    list of features bolted together at the end.
 spec:
-  - submitted by the deadline, in the format named below
-  - it stands on its own, without you there to explain it
-  - it answers the brief rather than restating it
+  - submitted by the deadline as a deployed, running build plus the source repository
+  - runs unattended for at least the length of the final studio, with no input it doesn't document
+  - a first-time viewer can start using it with no spoken explanation
+  - you can state, in one sentence, what the piece is actually about — not what it does, what it's *for*
+related:
+  - assessments/first-instrument
 ---
-
-<!-- STARTER_CONTENT: replace this assessment brief, then remove this comment. -->
-
-Replace this brief. The final project is where a course's weights usually
-concentrate, so it is worth being explicit about how the earlier work feeds it.
 
 ## The brief
 
-> One sentence, again as a blockquote.
+> Take the instrument this semester built toward and stage it to survive a
+> room full of strangers with nobody there to explain it.
 
-Say what scope is realistic in the time available. A brief that quietly assumes
-twice the available hours is the most common way a capstone goes wrong.
+The realistic scope here is a deepened, staged version of First Instrument ---
+not a new build from nothing in the last two weeks. Twelve weeks concentrated
+one continuous idea (gesture, constraint, decay, many hands, a chosen
+failure, a small family of outputs); the exhibition piece is the version of
+that idea that can finally stand in a room without you. A brief that quietly
+assumes a fresh build in the time remaining is the most common way a capstone
+like this goes wrong --- start from what you already have.
 
 ## What you submit
 
-The artefact, and whatever a marker needs to run or read it.
+A link to the deployed build, the source repository, and whatever staging
+notes a marker needs to run it the way it ran in the final studio (screen
+size, whether it needs a keyboard or a pointer or both, how long it runs
+before it needs a reset).
 
-This one demonstrates the alternative marking mode: a holistic explanation
-rather than weighted criteria. The site renders either mode from frontmatter.
+This assessment is judged holistically rather than against a weighted table,
+because "does this read as one coherent instrument" is a whole-piece
+judgement, not a sum of separately-scored parts.
