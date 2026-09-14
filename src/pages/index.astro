@@ -2,36 +2,39 @@
 import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
-import heroImage from "../assets/images/hero-home.avif";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
-
-// STARTER_CONTENT: replace the hero artwork and its alt text below, then
-// remove this comment.
 ---
 
 <ContentLayout
   title={`${courseMeta.code}: ${courseMeta.title}`}
   description={courseMeta.description}
-  heroImage={heroImage}
-  heroImageAlt="A lecture theatre reduced to flat gold and black shapes, rows of seats sweeping past the frame, in a two-ink risograph print"
   {...siteConfig}
 >
   <ul class="course-tags" aria-label="Course tags">
     {courseMeta.tags.map((tag) => <li>{tag}</li>)}
   </ul>
 
-  <!-- STARTER_CONTENT: replace the authored page below, then remove this comment. -->
   <h2>What you will do</h2>
   <p>
-    Say what a student spends their time on — the making, reading, arguing or
-    measuring that fills the weeks. Name the artefact they walk out with.
+    Each week you build one small interactive instrument for making marks —
+    software a hand plays like a brush, not a picture the software produces for
+    you. You'll steer a stroke with a pointer, a touch and a keyboard in turn,
+    give it one deliberate constraint, let it decay or drift on its own, and
+    watch what a real hand does with it that a screenshot never shows. Twelve
+    weeks build toward two things: an instrument built to a self-imposed
+    constraint, and a small exhibition piece that has to run for a stranger
+    with nobody there to explain it.
   </p>
 
   <h2>Who it is for</h2>
   <p>
-    Say who this is aimed at and what they need to already know. Be specific
-    enough that someone can rule themselves in or out without emailing you.
+    You can already write a program that responds to a mouse, a touch or a key
+    — this course does not teach programming from nothing. It's for anyone
+    curious about the gap between "the code runs" and "the thing feels right in
+    the hand": interaction designers, generative artists, and programmers who
+    want to spend a semester on the part of software that only shows up when
+    someone else's fingers are on it.
   </p>
 
   <h2>Where to go next</h2>
