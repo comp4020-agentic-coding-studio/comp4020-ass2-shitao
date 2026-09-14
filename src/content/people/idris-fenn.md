@@ -1,17 +1,19 @@
 ---
 title: Idris Fenn
 description:
-  A tutor working across the course's first reviews and the practical work that
-  follows them.
+  A tutor working across the studios and the crits that follow them, and the
+  first point of contact for anything hands-on.
 affiliation: Slop University School of Invented Disciplines
 role: tutor
 email: idris.fenn@slop.university
-contact: Ask during sessions, or email when a question cannot wait until the next one.
-photo: ./idris-fenn.avif
-photoAlt: A stylised portrait of a person facing the viewer, flat gold and black shapes on warm cream, in a two-ink risograph print
+contact: Ask during a studio, or email when a question can't wait until the next one.
 ---
 
-<!-- STARTER_CONTENT: replace this person entry, then remove this comment. -->
+Idris runs the middle studios --- the ones where a working instrument from the
+week before either survives being touched by someone else, or doesn't. Most of
+what gets taught there is diagnosis: why a gesture that felt right to its
+author reads as broken to a stranger's hand, and what in the code actually
+explains the difference.
 
-Replace this entry. A second person makes the listing, role ordering and
-teacher-reference fields visible before you replace the cast with your own.
+Office hours are announced per studio rather than fixed, since the useful
+question in week 3 is rarely the useful question in week 9.

@@ -2,20 +2,19 @@
 title: Marisol Quaye
 description:
   The founding convenor, responsible for the course's shape and its weekly
-  teaching programme.
+  studio programme.
 affiliation: Slop University School of Invented Disciplines
 role: convenor
 email: marisol.quaye@slop.university
-contact: Email for course-level questions; use the weekly session for feedback on work.
-photo: ./marisol-quaye.avif
-photoAlt: A stylised portrait of a person in three-quarter view, flat gold and black shapes on warm cream, in a two-ink risograph print
+contact: Email for course-level questions; use the weekly studio for feedback on work in progress.
 ---
 
-<!-- STARTER_CONTENT: replace this person entry, then remove this comment. -->
+Marisol built the first version of this course after a decade of shipping
+generative-art tools that looked finished in a demo video and fell apart the
+moment a real hand touched them. The course exists to close that gap on
+purpose, one small instrument at a time, rather than leave students to
+discover it after graduating.
 
-Replace this entry. A people page carries a short bio and whatever a student
-needs in order to contact the right person for the right thing --- and nothing
-that will be stale by week 3.
-
-Consultation hours, contact preferences and the escalation path (who to ask
-first, who to ask when that does not work) are the parts students actually read.
+She teaches the first and last studio of the semester and sets each week's
+constraint; the studios in between are run week to week against whatever the
+class actually built, not a fixed script.
