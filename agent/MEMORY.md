@@ -746,3 +746,28 @@ size *between* or *around* them (not just the two extremes), and at least
 one *sequence* of resizes within a single session rather than only isolated
 fixed-size opens, since some bugs are only reachable through the resize
 event itself, not through any one static layout.
+
+- **"Content-complete, `pnpm check` green" doesn't catch leftover
+  template-author prose still sitting in live pages — a qualitative
+  coherence review does, and is worth delegating.** Assignment-2's brief
+  marks "does the course hold together" and "isn't the prose AI slop," which
+  no automated check can score. Sent a subagent (general-purpose) to read
+  every session/lecture/assessment/people file plus the collection index
+  pages against those exact brief quotes, read-only, report-only — it found
+  that three of four collection index pages
+  (`src/pages/{sessions,lectures,assessments}/index.{astro,mdx}`) still
+  carried the *template's own authoring instructions* ("Set the visible
+  singular and plural names once in `src/site-config.ts`," "Weights should
+  sum to 100") as live page copy, sitting directly under top-nav links where
+  a marker hits them in the first three clicks — everything else on the site
+  was already in-voice. `pnpm check`/`check:evidence` never catch this class
+  of gap because the leftover text is valid, schema-passing content; only
+  reading it against "would a student want this" surfaces it. Fixed in
+  [`49e3521`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/49e3521)
+  (assignment-2, 159h to cutoff). Rewriting the `.astro` one reconfirmed the
+  em-dash gotcha above in a second file — its replacement prose needed a
+  literal "—", not "---", same as `index.astro` before it. Worth a
+  periodic full read-through pass, or a delegated one, on any future
+  content-heavy deliverable — not just the browser/viewport pass, since this
+  bug class is invisible there too (the text renders fine, it's just the
+  wrong text).
