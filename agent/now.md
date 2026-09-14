@@ -1,77 +1,63 @@
 # now
 
-**Deepen run for assignment-2, 159h to cutoff.** Deliverable is
+**Deepen run for assignment-2, 146.5h to cutoff.** Deliverable is
 `comp4020-ass2-shitao`: SLOP1450 "Instruments for Mark-Making." Not the final
-run — did not push, per the standing gate.
+run — no code changes, nothing pushed, per the standing gate (finishing steps
+stay gated to inside 24h to cutoff).
 
 ## What this run did
 
-Took stock of the prior run's build (12 sessions, 6 lectures, 3 assessments,
-people, homepage/policies, spec checks — see prior `now.md` content folded
-into `git log` if needed) and spent the run on a coherence/quality pass
-against assignment-2's actual marking language ("does it hold together,"
-"isn't AI slop," "twelve weeks that repeat one another"), rather than adding
-new content.
+Took stock: previous run (159h) had already done a full qualitative
+coherence pass (fixed leftover template-author prose on three collection
+index pages, fixed the exhibition-piece due-date gap) and a three-viewport
+browser pass. `pnpm check` was already green (0 typecheck errors, 31 pages
+built, 4 vitest tests, no a11y/broken-link violations) with nothing changed
+since.
 
-Delegated a read-only content review to a subagent (full method and finding
-now in `MEMORY.md`'s "Working habits" section). Verdict: the session/
-lecture/assessment/people/homepage prose is genuinely coherent and
-distinctive — no repetition across the twelve weeks, assessments visibly
-build on the session arc, no buzzword filler. But three of the four
-collection index pages
-(`src/pages/{sessions,lectures,assessments}/index.{astro,mdx}`) still
-carried unedited **template-author** prose (schema/authoring notes like
-"Weights should sum to 100"), sitting right under the top-nav links a
-marker hits first. Rewrote all three in the course's own voice
-([`49e3521`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/49e3521)).
+This run's contribution was narrower and more targeted: real *interaction*
+testing, not just static screenshots, on the two surfaces the brief
+explicitly says markers check that the prior runs hadn't exercised
+interactively — the week-01 deck and the mobile nav. Read the source first
+(deck MDX, policies page, both people bios) to confirm the prose quality the
+prior subagent review already vouched for was still holding — it was, no
+changes needed.
 
-Also fixed a real inconsistency the review surfaced: `exhibition-piece.md`'s
-`due:` date (2027-05-21) sits 11 days after the live-crit date it's judged
-against (week 12, 2027-05-10), with nothing explaining the gap. Added one
-clarifying sentence — the later date is for writing up staging notes, not
-for changing what ran
-([`ff03097`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/ff03097)).
+Verified via `agent-browser --session ass2-deepen` (named session, per the
+standing shared-tab-hazard note; `--args "--no-sandbox"` before the
+subcommand, per the standing sandbox note):
+- deck navigation via real `ArrowRight`/`ArrowLeft` keypresses (not just
+  `open` + screenshot) — slides advance correctly, the CJK quote slide
+  renders its centred styling and em-dash attribution correctly, at both
+  1280×720 desktop and 390×844 mobile viewports
+- mobile hamburger menu — clicked (not just screenshotted closed), all five
+  nav sections (Lectures/Studios/Assessment/People/Policies) reachable
+- `errors`/`console` clean throughout
 
-Rewriting the `.astro` index page's prose re-triggered the standing
-em-dash-in-`.astro` gotcha (a literal "—" is needed, not "---" — see
-`MEMORY.md`) — caught it myself this time by reading rendered `innerText`
-before moving on, not by a fresh discovery.
+Also cross-checked the two things spec/course-brief.test.ts encodes against
+source directly: assessment weights (15 + 35 + 50 = 100, critique-practice/
+first-instrument/exhibition-piece) and the week-01 lecture's `slides:
+/decks/week-01/` frontmatter linking to the deck that built. Both correct.
 
-`pnpm check` clean after both commits (typecheck 0/0, build 31 pages, 4
-vitest tests, no a11y/broken-link violations). Verified all three edited
-pages plus the exhibition-piece page render correctly at
-`http://localhost:4321/comp4020-ass2-shitao/...` via `agent-browser`
-(confirmed port via the preview server's own log line, shut the server down
-afterward, confirmed via `lsof`).
+Found nothing to fix. Shut the preview server down afterward, confirmed via
+`lsof` that port 4321 was free.
 
 ## Still open (unchanged from before)
 
 `PROCESS.md` and this repo's `CLAUDE.md` are still template placeholders —
 deliberately left for a run closer to cutoff, since both are finishing-step
-items and there's still ~159h of runway. `PROCESS.md` now has real commits
-across the whole build to cite (the ones above plus the four from the prior
-run: sessions/lectures/assessments/spec-checks).
-
-## Verification done this run (after the two content commits above)
-
-Real-browser pass (`agent-browser --session ass2-v1`) at 1920×1080,
-390×844, and — per the standing "check a viewport *between* the two
-declared ones too" refinement — 1280×720 as well: homepage, sessions/
-lectures/assessments/people/policies indexes, a session detail, the
-week-01 lecture, the exhibition-piece assessment, and the week-01 deck.
-No console errors at any size, em-dashes render correctly everywhere
-(including the two just-rewritten `.astro`/`.mdx` blurbs), no layout
-breakage at the in-between width. Confirmed port via the preview server's
-own log line each restart; shut the server down afterward and verified via
-`lsof` that the port was free. Nothing further to fix from this pass.
+items and there's still >140h of runway. `PROCESS.md` has a full set of real
+commits to cite spanning the whole build (course-config through the two
+content-quality fixes at 159h).
 
 ## Next action
 
-Either keep deepening (nothing broken, nothing urgent — a fresh
-qualitative content pass or another resize-sequence check would be the
-next thing to try if there's a run to spare) or, if nearer cutoff, move to
-the finishing steps: write `PROCESS.md` (400–600 words, citing real
-commits, telling the course-design narrative not a changelog) and this
-repo's `CLAUDE.md`, then commit/push/verify the live URL per doctrine's
-finishing-step list. `check:evidence` still fails only on `PROCESS.md`
-(template boilerplate) — expected until that's written.
+Keep deepening while runway remains — a fresh angle each run (this run did
+deck/mobile-nav interaction; a future run could re-run the qualitative
+content review after enough time has passed to read it fresh, or check the
+assessment pages' own internal marking-criteria tables render sensibly) is
+more useful than re-checking the same three viewports again. Move to
+finishing steps (`PROCESS.md`, this repo's `CLAUDE.md`, commit, push, verify
+live URL) only once meaningfully closer to the 2026-09-21 noon deadline —
+per doctrine, the hours-to-cutoff figure is context, not itself the gate;
+wait for a run the prompt calls last, or a genuinely tight margin, before
+starting those.
