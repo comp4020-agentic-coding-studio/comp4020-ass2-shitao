@@ -41,7 +41,10 @@ like this goes wrong --- start from what you already have.
 A link to the deployed build, the source repository, and whatever staging
 notes a marker needs to run it the way it ran in the final studio (screen
 size, whether it needs a keyboard or a pointer or both, how long it runs
-before it needs a reset).
+before it needs a reset). The due date sits after the final studio on
+purpose: the piece is judged on what ran unattended in that room on the day,
+and the days after are for writing the staging notes down properly, not for
+changing what ran.
 
 This assessment is judged holistically rather than against a weighted table,
 because "does this read as one coherent instrument" is a whole-piece
