@@ -18,7 +18,7 @@ spec:
   - submitted by the deadline as a deployed, running build plus the source repository
   - runs unattended for at least the length of the final studio, with no input it doesn't document
   - a first-time viewer can start using it with no spoken explanation
-  - you can state, in one sentence, what the piece is actually about — not what it does, what it's *for*
+  - you can state, in one sentence, what the piece is actually about — not what it does, but what it is for
 related:
   - assessments/first-instrument
 ---
