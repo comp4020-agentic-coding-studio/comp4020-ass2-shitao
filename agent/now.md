@@ -1,67 +1,61 @@
 # now
 
-**Deepen run for assignment-2, 135h to cutoff.** Deliverable is
+**Deepen run for assignment-2, 124h to cutoff.** Deliverable is
 `comp4020-ass2-shitao`: SLOP1450 "Instruments for Mark-Making." Not the final
-run --- per the standing gate, finishing steps (`PROCESS.md`, this repo's
-`CLAUDE.md`, push) stay gated to inside 24h to cutoff.
+run --- finishing steps (`PROCESS.md`, this repo's `CLAUDE.md`, push) stay
+gated to inside 24h to cutoff. Deadline is noon 2026-09-21.
 
 ## What this run did
 
-Took stock: previous run (141h) fixed a markdown-in-plain-text-field bug on
-exhibition-piece.md's spec line (`2db016d`) and left three untried angles for
-future runs. No upstream drift since --- `git log` between then and now is
-just harness tick-snapshot commits.
+Took stock: no upstream drift since last run (working tree clean, up to date
+with origin; only harness tick-snapshot commits in between).
 
-Picked the first untried angle: a fresh qualitative re-read of the lecture
-pages and slide deck specifically (prior runs had checked deck/lecture
-*interaction*, not content depth or cross-lecture coherence). First did a
-cheap structural check myself --- grepped every content file's frontmatter
-block for stray `*`/`_`/backtick markdown syntax (the class of bug found last
-run); none found, so that specific gotcha doesn't recur elsewhere.
+Closed out the previous run's flagged next action: read all five untried
+lecture files (week-03/05/07/09/11) and confirmed **none of them have a deck**
+(`grep -l "slides:"` matches only week-01.md) --- so the specific bug class
+just fixed (a deck slide quoting the wrong week's session prep text) is
+structurally confined to `week-01.deck.mdx` and cannot recur elsewhere; that
+angle is now closed, not just deferred. Also re-read every session's "Before
+the studio" text against its lecture's outline/forward-references (the week-01
+deck's own "we'll come back to this in week 12" callback checks out against
+session 12's actual content) --- no drift found.
 
-Then delegated a cold read of all six lectures, the week-01 slide deck, and
-supporting session/index pages to a subagent, asked to check: do the six
-lectures actually do distinct work or feel interchangeable; does the deck
-have real depth or read as filler; any AI-slop prose; any cross-page factual
-inconsistencies. Its verdict: the arc is genuinely coherent (each lecture
-does load-bearing, non-swappable work; the teacher-assignment pattern and the
-week-1-to-week-12 callback are real structural payoffs, not filler), the deck
-has real depth (a primary-source citation, concrete forward references that
-are actually fulfilled elsewhere in the site), and no AI-slop prose.
+Then ran the browser/viewport pass that had lapsed since 141h (last run
+skipped it once already; doctrine says don't let it lapse further). `pnpm
+check` green (typecheck, build, 4 tests, axe, link-checker, astromotion deck
+check). Screenshotted home, the week-01 deck (including in-deck keyboard
+navigation two slides in), exhibition-piece, people, lectures index and
+policies at 1920x1080, 1280x720 (the "in-between" size the standing rule asks
+for), and 390x844. All clean --- no image overflow, no layout breaks, em-dashes
+render correctly everywhere (including the deck's hardcoded subtitle line),
+`errors`/`console` empty throughout. Confirmed the preview server actually
+bound port 4321 before trusting it (per the standing gotcha), and confirmed it
+was actually killed afterward via `lsof`, not just `pkill`'s exit code.
 
-**It did find one real bug**: `src/decks/week-01.deck.mdx`'s closing slide
-was headed "Read before week 3" but its body ("bring the build from week 1,
-running, and the one decision about it you're least sure of") is
-session 02's own "Before the studio" text verbatim --- week 3's actual prep
-(`03-gesture-as-data.md`) is different content entirely ("bring last week's
-build, you'll be cutting it open, not starting again"). The slide's content
-was right for the *next* studio after week 1 (week 2); only the heading's
-week number was wrong. `pnpm check` was green throughout, since nothing
-validates cross-references between deck slides and session prep text ---
-same shape as prior runs' "checks green, browser/close-reading catches it
-anyway" findings, but via prose cross-referencing rather than rendering.
-Fixed by changing the heading to "Read before week 2"; verified `pnpm check`
-still green after. Committed as `595efe3`, not pushed (>24h-to-cutoff gate).
+No code changes this run --- nothing needed fixing. Nothing committed.
 
-## Still open (unchanged from before)
+## Still open
 
-`PROCESS.md` and this repo's `CLAUDE.md` are still template placeholders ---
-deliberately left for a run closer to cutoff. `PROCESS.md` has a full set of
-real commits to cite spanning the whole build through this run's fix,
-including a good course-design-decision anecdote (the deck/session
-cross-reference bug is a concrete example of "how did you know the result
-was right before you accepted it" for `PROCESS.md`'s spine).
+`PROCESS.md` and this repo's `CLAUDE.md` are still template placeholders,
+deliberately deferred to a run closer to cutoff. `PROCESS.md` has a full set
+of real commits to cite across the whole build, including the deck/session
+cross-reference bug (`595efe3`) as a concrete "how did you know the result was
+right before you accepted it" anecdote, and the leftover-template-prose find
+(`49e3521`) as a second.
+
+The one soft (not a bug) observation from this run: week-03's lecture makes a
+forward reference ("state-based signals as a further step past timing
+signals, for later weeks") that nothing later in the site explicitly picks up
+by name --- it's vague enough not to be factually wrong, so not worth chasing
+as a fix, but if a future run wants a genuine depth-add rather than a bug
+hunt, that's a real thread to pull (e.g. wiring it into week-08's or
+week-10's lecture/session content).
 
 ## Next action
 
-Keep deepening while runway remains. Untried angles still on the table from
-before (people/policies pages under the markdown-rendering question ---
-now spot-checked via the frontmatter grep above and clean, so lower
-priority) and newly worth trying: check the *other five* lecture pages'
-"read before"/prep-style cross-references against their corresponding
-session files the same way this run did for week-01's deck, since the bug
-just found suggests this class of cross-file drift wasn't checked
-systematically before. A dedicated browser/viewport pass hasn't happened
-since 141h (last run) --- fine to skip once more, but don't let it lapse
-past a couple more runs per the standing rule. Move to finishing steps only
-once meaningfully closer to the 2026-09-21 noon deadline.
+Runway remains (124h). Content and rendering both check out clean across
+three separate passes now (this run's, and the two before it). If nothing
+else turns up on a future deepening pass, the next genuinely open work is
+either the soft depth-add above, or simply holding until closer to cutoff to
+start the finishing steps (`PROCESS.md`, this repo's `CLAUDE.md`, then commit,
+push, verify the live URL).
