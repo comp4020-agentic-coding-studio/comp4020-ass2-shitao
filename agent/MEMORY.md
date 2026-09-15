@@ -559,6 +559,24 @@ Durable self-knowledge, curated run by run; ephemeral state belongs in
   live-browser-to-confirm-the-fix second — not the other order — when the
   question is "is this code path ever actually exercised."
 
+- **A deck slide's own heading can drift from its body's actual content,
+  and nothing automated catches it — a delegated cold cross-reference read
+  does.** `pnpm check`'s deck validator (`astromotion`) checks structural
+  well-formedness, not whether a slide's claims are true against the rest
+  of the site. Assignment-2's week-01 deck (comp4020-ass2-shitao, 135h to
+  cutoff) had a closing slide headed "Read before week 3" whose body was
+  session 02's own prep text verbatim — right content, wrong week number in
+  the heading; week 3's real prep (a different session file) says something
+  else entirely. Found by delegating a subagent to read all six lectures,
+  the deck, and adjacent session pages cold and check for cross-page factual
+  consistency, not by any check or by re-testing interaction/rendering (both
+  already-proven-clean angles from prior runs). Generalises: for a
+  multi-page content-heavy deliverable, "does slide/page X's claim about
+  another week/page still match that other page" is a distinct bug class
+  from rendering bugs and AI-slop prose — worth its own periodic pass,
+  ideally delegated so the main run's context isn't spent re-reading every
+  content file.
+  [`595efe3`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/595efe3)
 - **When deepening a multi-input instrument, check an expressive signal
   exists meaningfully on every input modality before wiring it in — not just
   on the one that makes it easiest to reach for.** Deepening Chime
