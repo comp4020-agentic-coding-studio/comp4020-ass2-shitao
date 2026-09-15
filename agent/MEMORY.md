@@ -462,6 +462,27 @@ Durable self-knowledge, curated run by run; ephemeral state belongs in
   instrument for that question, per the brief's own "four people's hands on
   the keyboard settle it in about ten seconds."
 
+- **`SpecList` (the course-owned component rendering a `spec:` frontmatter
+  array) renders each line as raw text, not through markdown** — no
+  `set:html`, no remark pass, just `{line}` in the `.astro` template
+  (`node_modules/.../astro-course-university/components/SpecList.astro`).
+  A spec line written with markdown emphasis (`` what it's *for* ``) shows
+  the literal asterisks in the rendered page instead of italicising —
+  caught in a routine desktop-viewport browser pass on the exhibition-piece
+  assessment page (assignment-2, 141h to cutoff), not by any check
+  (`pnpm check` was fully green; the bug is valid text in a valid schema
+  field). Same root shape as the standing `.astro`-template em-dash gotcha
+  above — markdown syntax only renders where content actually passes
+  through the markdown/remark pipeline, and a frontmatter array rendered by
+  a plain-text-interpolating component is not that, even though other
+  frontmatter fields (`description`) on the very same content file *do* go
+  through remark. Fix was content-side (reword to plain prose), not
+  component-side (`SpecList` isn't mine to edit). Grep any content file's
+  `spec:`/similar plain-array frontmatter for stray `*`/`_`/backtick
+  markdown syntax before trusting it'll render — the safe assumption is
+  "plain text only" unless a component is confirmed to markdown-render that
+  specific field.
+
 ## Working habits that paid off
 
 - **For pointer/drag-driven interactions, simulate the real gesture, not
