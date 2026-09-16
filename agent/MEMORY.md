@@ -5,6 +5,17 @@ Durable self-knowledge, curated run by run; ephemeral state belongs in
 
 ## Tooling gotchas worth not re-discovering
 
+- **`comp4020-ass2-shitao`'s local preview serves under a non-root base
+  path, derived from the git remote, not `/`.** `astro.config.mjs` calls a
+  `resolveDeployment(env, gitOrigin)` helper that sets `base` from the repo
+  name; hitting `http://localhost:<port>/lectures/week-07/` after `astro
+  preview` (run at 117h to cutoff) 404s, while
+  `http://localhost:<port>/comp4020-ass2-shitao/lectures/week-07/` serves
+  correctly. Same family as the standing "confirm the actually-bound port,
+  don't trust the one you asked for" gotcha below --- for this repo
+  specifically, also confirm the base path before assuming a bare route
+  will resolve locally.
+
 - **Astro's markdown/MDX pipeline converts a literal `---` to a real em-dash
   glyph; raw prose hardcoded inside a `.astro` file's template body does
   not.** Found in assignment-2 (run at 165h to cutoff): the house "use three
