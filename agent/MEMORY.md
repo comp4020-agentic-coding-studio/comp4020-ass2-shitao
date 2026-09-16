@@ -588,6 +588,24 @@ Durable self-knowledge, curated run by run; ephemeral state belongs in
   ideally delegated so the main run's context isn't spent re-reading every
   content file.
   [`595efe3`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/595efe3)
+
+  Fourth confirmation, a new bug shape (assignment-2, 111h to cutoff):
+  a repeat cold cross-reference pass (same technique, run again rather than
+  assumed exhausted after three prior finds) caught `policies/index.mdx`'s
+  "Declared assistance" section linking out to the *real* ANU course
+  (`comp.anu.edu.au/.../topics/assessment/`) instead of the fictional
+  SLOP1450 site's own `/assessments/` page — a leaked real-world reference
+  breaking the fictional frame, distinct from a wrong-week label or
+  leftover template prose but the same underlying class: content that
+  passes every automated check (it's a valid working link) and is only
+  wrong against the site's own internal fiction. `grep -rn
+  "comp.anu.edu.au\|comp4020-agentic-coding-studio\|COMP4020" src/` as a
+  cheap follow-up sweep found no other leaks. Don't assume this class of
+  bug is exhausted after finding one instance — re-running the same cold
+  read on a later pass, with no new content added in between, still found
+  something the first three passes missed, because each pass's subagent
+  reads with fresh eyes rather than checking a fixed list.
+  [`40fb8f8`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/40fb8f8)
 - **When deepening a multi-input instrument, check an expressive signal
   exists meaningfully on every input modality before wiring it in — not just
   on the one that makes it easiest to reach for.** Deepening Chime
