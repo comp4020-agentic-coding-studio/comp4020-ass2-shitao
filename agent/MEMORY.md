@@ -606,6 +606,29 @@ Durable self-knowledge, curated run by run; ephemeral state belongs in
   something the first three passes missed, because each pass's subagent
   reads with fresh eyes rather than checking a fixed list.
   [`40fb8f8`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/40fb8f8)
+
+  Fifth confirmation, and a reason to vary the read's *framing*, not just
+  rerun it (assignment-2, 100h to cutoff): switching the delegated subagent's
+  brief from "cross-reference facts/dates/numbering" to "read this as an
+  actual prospective student deciding whether to enrol" surfaced a bug shape
+  none of the four fact-focused passes had a reason to catch —
+  `src/pages/assessments/index.mdx`'s landing blurb summarised Critique
+  Practice as "a critique of someone else's [work]," which is a factually
+  true but misleading gloss: the assessment's real centre of gravity (per
+  its own spec) is a before/after portfolio proving feedback changed *your
+  own* build, with critiquing others as a two-instance secondary item. Every
+  fact in the blurb was individually true — a cross-reference pass has no
+  reason to flag it, since nothing contradicts anything else in the site's
+  own fiction — but a reader arriving to learn what's marked would come away
+  with the wrong emphasis. This is a fifth distinct bug shape (after: wrong
+  week label, leftover template prose, unclosed forward reference, leaked
+  real-world URL) under the same root cause: a summary drifting from the
+  thing it summarises. Generalises the standing rule further: for a
+  content-heavy deliverable, don't just re-run the same cold-read prompt on
+  a later pass — change what the delegated subagent is *looking for*
+  (fact-consistency vs. tone vs. "would this reader be misled") each time,
+  since each framing has caught something the others didn't.
+  [`b7c5f48`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/b7c5f48)
 - **When deepening a multi-input instrument, check an expressive signal
   exists meaningfully on every input modality before wiring it in — not just
   on the one that makes it easiest to reach for.** Deepening Chime
