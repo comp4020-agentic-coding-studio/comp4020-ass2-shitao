@@ -1,61 +1,70 @@
 # now
 
-**Deepen run for assignment-2, 76h to cutoff.** Deliverable is
+**Deepen/verify run for assignment-2, 87h to cutoff.** Deliverable is
 `comp4020-ass2-shitao`: SLOP1450 "Instruments for Mark-Making." Not the final
-run --- finishing steps (push, deploy-equivalent) stay gated to inside 24h to
-cutoff. Deadline is noon 2026-09-21.
+run --- finishing steps (`PROCESS.md`, this repo's `CLAUDE.md`, push) stay
+gated to inside 24h to cutoff. Deadline is noon 2026-09-21.
 
 ## What this run did
 
-Took stock: no upstream drift since the last run beyond harness tick-snapshot
-commits; working tree clean; `pnpm check` green (typecheck/build/a11y/links/
-deck/tests, 31 pages). Re-fetched the assignment-2 brief; unchanged.
+Took stock: no upstream drift since the last run beyond the harness's own
+tick-snapshot commits; working tree clean; `pnpm check` green
+(typecheck/build/a11y/links/tests all pass, 31 pages). Re-fetched the
+assignment-2 brief; unchanged.
 
-Acted on the last hand-off's recommendation rather than reaching for an eighth
-cold-read framing: drafted both still-template placeholder files.
+One check this run, delegated to a subagent: a **literal marker-simulation
+walkthrough**, distinct from the six prior cold-read framings (which were all
+generic full-content reads). This one reproduced the brief's own described
+marking process verbatim --- home page at both viewports, three non-adjacent
+sessions (01/05/09) at desktop plus session 12 at phone viewport, one full
+assessment (Exhibition Piece), the week-01 deck, and the policies page, judged
+against the brief's actual scoring language ("one idea explored throughout a
+semester," no repetition/filler, no reskinned-starter tells, no AI-slop
+prose). Verdict: clean. Specific throughlines held up (week 1's stroke/no-plan
+opening closes with week 12's "method of no method," echoing Shitao's own
+treatise quoted in both the deck and session 01); the previously-fixed
+real-ANU-link stayed fixed; no new leaked references; prose in the policies
+page and deck stayed in the course's own voice. One non-issue noted: a scroll-
+boundary glyph-clipping artifact on session 12's phone screenshot, confirmed
+not a rendering bug (reproduces consistently on scroll, not a one-off).
 
-- `PROCESS.md` (513 words, in range): narrates the actual workflow --- the
-  brief's "one idea explored throughout" bar makes page-to-page *drift* the
-  real risk, not any single page's validity, so the real work was repeated
-  cold reads of the whole site with a different framing each time. Cites the
-  five real fixes banked across runs (`595efe3`, `49e3521`, `c7d67c2`,
-  `40fb8f8`, `b7c5f48`) and explicitly separates what became a `spec/` check
-  (course code digits, assessment weight total, deck build --- mechanical
-  facts) from what stayed a marker-only judgement (tone, emphasis, whether a
-  forward reference actually pays off).
-- This repo's `CLAUDE.md`: states the rules actually held to, not the empty
-  template shell --- names the drift failure mode explicitly, the two
-  markdown-doesn't-render-here traps (`SpecList` plain-text rendering,
-  `.astro` template prose needing a literal em-dash) as concrete gotchas a
-  future edit could reintroduce, and what's deliberately left unchecked and
-  why.
-
-`pnpm check:evidence` passed immediately: "PROCESS.md: 5 cited commit(s) all
-resolve." Re-ran `pnpm check` after both edits --- still fully green. Committed
-locally as `64909bd`, not pushed (inside the 24h gate).
+Seven cold-read/verification passes now, six framings plus this one: fact
+cross-reference (×2, found `595efe3` and `40fb8f8`), template-leftover-prose
+hunting (found `49e3521`), prospective-student reading (found `b7c5f48`),
+reskinned-starter hunting (found nothing), and now literal marker-simulation
+(found nothing). Three of the last four framings have come back clean.
 
 ## Still open
 
-The soft item from prior runs is unchanged: SLOP1450 is `level: 1`
-(introductory) but the homepage states a prior-programming-competency
-requirement. Still read as a plausible intentional choice for a niche
-department, not a contradiction --- left alone again.
+`PROCESS.md` and this repo's `CLAUDE.md` are still template placeholders,
+deliberately deferred to a run closer to cutoff (confirmed still placeholder
+this run). Anecdotes banked for it: the deck/session cross-reference bug
+(`595efe3`), the leftover-template-prose find (`49e3521`), week-03's closed
+callback (`c7d67c2`), the real-course-URL leak (`40fb8f8`), and the
+assessment-blurb mismatch (`b7c5f48`) --- five real fixes across five
+different cold-read framings, now with two further framings (reskinned-
+starter hunting, literal marker-simulation) confirmed clean.
 
-Both drafted files are now real, but not final: worth a re-read closer to the
-actual finishing run, since the last hand-off's whole point was that drafting
-early buys room to revise, not that this draft is the last word. In
-particular, if a further commit lands (a fix from a future content pass),
-`PROCESS.md`'s citation list should absorb it rather than going stale.
+The one still-open soft item from prior runs: SLOP1450 is `level: 1`
+(introductory) but the homepage states a prior-programming-competency
+requirement. Still judged as a plausible intentional choice for a niche
+department, not a contradiction --- left alone again this run.
 
 ## Next action
 
-Runway remains (76h, outside the 24h finishing-steps gate). Two content-review
-framings are still untried per the last hand-off (accessibility-of-prose read,
-full internal-cross-reference-sense-check) if a future run wants one more
-content pass, but three of the last four framings came back clean, so this is
-optional rather than owed. The concrete next steps that *are* owed, closer to
-the 24h mark: a fresh full real-browser pass at both marking viewports
-(desktop 1920x1080, phone 390x844) immediately before the finishing run
-(last one was the marker-simulation walkthrough ~11h before this run, so not
-urgent yet), then the actual finishing steps in doctrine order --- push,
-confirm the live GitHub Pages URL once the harness ships it.
+Runway remains (87h, still outside the 24h finishing-steps gate). Given seven
+passes now and three of the last four clean, the content-review well is
+likely running dry --- **recommend the next run start drafting
+`PROCESS.md` and this repo's `CLAUDE.md` early** rather than reaching for an
+eighth fresh framing. There's no rule against drafting before the 24h gate,
+only against treating it as done/pushing before then, so a draft pass now
+gives more room to revise before the real deadline. `PROCESS.md` needs
+400--600 words, first-person, citing `595efe3`, `49e3521`, `c7d67c2`,
+`40fb8f8`, and `b7c5f48` (and this run's clean marker-simulation pass as
+verification evidence, if useful), explaining which "good course" judgments
+became a `CLAUDE.md` rule or a `spec/` check versus were deliberately
+omitted --- per the brief, that reasoning (not just commit-claim
+corroboration) is what separates an HD-band `PROCESS.md` from the floor of
+the band. If a further content pass still feels worthwhile, an
+accessibility-of-prose read or a full internal-cross-reference-sense-check
+are the two framings not yet tried.
