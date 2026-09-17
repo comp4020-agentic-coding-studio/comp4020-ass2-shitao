@@ -1,53 +1,58 @@
 # Process overview
 
-<!-- TEMPLATE: this file is a shape to fill in, not a form. Replace everything
-     in it with your own overview, and delete this comment — `pnpm
-     check:evidence` will remind you if it's still here. -->
-
-Written by you, for a reader: how you got from the brief to the harness and
-agentic workflow behind this submission. Markers read this file and follow its
-citations; they don't trawl the repo for evidence you didn't point at.
-
-This file is the shape; the course site's
-[assessment page](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/topics/assessment/#what-you-submit)
-is the requirement, and its
-[word counts](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/topics/assessment/#word-counts)
-cover every deliverable.
-
 ## What I built
 
-One paragraph: the thing, and the idea behind it.
+SLOP1450, "Instruments for Mark-Making": a twelve-week studio course where each
+week builds one small interactive instrument for making marks — software a hand
+plays like a brush, not a picture the software produces for you — culminating in
+a self-constrained First Instrument, a Critique Practice built on a before/after
+portfolio, and an Exhibition Piece that has to run for a stranger with nobody
+there to explain it. The course is image-free by design: an instrument earns its
+page through what it does, argued in `src/site-config.ts`.
 
 ## How I got here
 
-The account of the process: how the work actually went, and how you knew the
-result was right. Tell it in whatever order makes it clear. A weekly prototype
-needs a paragraph or two; an assignment needs more.
+The brief scores "one idea explored throughout a semester," not a
+find-and-replaced COMP4020. That constraint shaped the harness more than the
+build did: the risk with a twelve-week fictional course isn't any single page
+being wrong, it's drift — a slide, a blurb or a policy quietly disagreeing with
+the page it's supposed to agree with, which no schema or build step can see
+because every individual page is still valid content.
 
-Cite the record as you go, as links whose text is the commit hash or range and
-whose target is this repo's commit or compare URL, so a reader clicks straight
-to the evidence:
+So the actual workflow, once content existed, was repeated cold reads of the
+whole site against itself, each with a different framing, because each framing
+caught something the others didn't. A plain fact cross-reference found week-01's
+deck slide reusing session 02's prep text under a week-03 heading
+([`595efe3`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/595efe3))
+and, later, the fictional policies page linking out to the real
+comp.anu.edu.au COMP4020 assessment page instead of SLOP1450's own
+([`40fb8f8`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/40fb8f8)).
+A read for leftover template-author prose — instructions written for whoever
+fills the template in, not course copy — found three collection index pages
+still carrying them
+([`49e3521`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/49e3521)).
+Reading week-03's lecture as a student rather than a fact-checker surfaced a
+forward reference to "state-based signals, for later weeks" that no later week
+ever paid off, closed by tying it to week 7's own device-unification argument
+([`c7d67c2`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/c7d67c2)).
+Reading the assessments index as a prospective student deciding whether to
+enrol — rather than checking it against anything — found a Critique Practice
+blurb that was individually true but wrong in emphasis, framing it as critiquing
+someone else's build when the brief's own weight is on a before/after portfolio
+of your own
+([`b7c5f48`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/b7c5f48)).
+A later pass that literally replayed the brief's own described marking
+walkthrough — home page at both viewports, three non-adjacent sessions, one
+full assessment, the deck, the policies page — came back clean, which is
+itself the evidence that the earlier framings weren't leaving an easy miss for
+a marker to hit.
 
-- one commit: [`a1b2c3d`](https://github.com/YOUR-ORG/YOUR-REPO/commit/a1b2c3d)
-- a range:
-  [`a1b2c3d...e4f5a6b`](https://github.com/YOUR-ORG/YOUR-REPO/compare/a1b2c3d...e4f5a6b)
-
-To pair a prompt with the commit it produced, quote the prompt (curated, not a
-full transcript) next to the citation:
-
-> the prompt, verbatim
-
-Screenshots are welcome where one carries the point better than a sentence does.
-Commit the file to this repo and link it with a **relative** path, which is what
-makes it render on GitHub: `![alt text](docs/before.png)`. Images don't count
-towards the word count and don't replace the citation.
-
-## Before you ship
-
-`pnpm check:evidence` verifies that this comment is gone, that your citations
-resolve to real commits, that a crit week's reflection entry is in
-`reflections/`, and that your `CLAUDE.md` is there. It checks that your account
-is traceable, not that it is good: that is the marker's call.
-
-Images aren't checked: unlike a citation whose SHA doesn't resolve, a broken
-image is visible the moment this file is rendered on GitHub.
+Some of what those reads found became durable checks rather than one-off fixes.
+`spec/course-brief.test.ts` asserts the two facts a cold read can't watch for
+every commit after this one: the course code keeps its assigned digits, and
+published assessment weights actually sum to 100 (the content schema only
+checks one assessment's own criteria, not the collection). What I left to
+judgement rather than a check: whether a page's tone matches a real course,
+whether an emphasis is right, whether a forward reference is honestly closed —
+those need a reader, and a schema that tried to encode them would be checking
+its own paraphrase of the brief, not the brief itself.
