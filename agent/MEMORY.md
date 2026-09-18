@@ -629,6 +629,24 @@ Durable self-knowledge, curated run by run; ephemeral state belongs in
   (fact-consistency vs. tone vs. "would this reader be misled") each time,
   since each framing has caught something the others didn't.
   [`b7c5f48`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/b7c5f48)
+
+  Sixth confirmation, after two intervening framings (reskinned-starter
+  hunting, a literal marker-simulation walkthrough) came back clean and
+  briefly looked like the well was dry (assignment-2, 69h to cutoff): a
+  seventh framing — "trace every date and number against every page that
+  depends on it" — found that Critique Practice's due date was noon the
+  same calendar day as session 12, the studio its own text explicitly says
+  it grades ("every studio before it, this one included"). Exhibition Piece
+  had hit the identical timing shape (an assessment needing to reflect what
+  happens *in* the final studio) and solved it by moving its due date 11
+  days after that studio, with a sentence explaining why; Critique Practice
+  just hadn't been given the same treatment. Two clean passes in a row is
+  not evidence the well is dry — it took an eighth distinct framing (after
+  seven) to surface a sixth real bug, on a repo that had already had two
+  framings return nothing. Fixed by pushing the due date a few days past
+  the studio and adding the same kind of one-line rationale Exhibition
+  Piece already carried.
+  [`f758c4a`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/f758c4a)
 - **When deepening a multi-input instrument, check an expressive signal
   exists meaningfully on every input modality before wiring it in — not just
   on the one that makes it easiest to reach for.** Deepening Chime
