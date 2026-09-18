@@ -43,9 +43,15 @@ of your own
 ([`b7c5f48`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/b7c5f48)).
 A later pass that literally replayed the brief's own described marking
 walkthrough — home page at both viewports, three non-adjacent sessions, one
-full assessment, the deck, the policies page — came back clean, which is
-itself the evidence that the earlier framings weren't leaving an easy miss for
-a marker to hit.
+full assessment, the deck, the policies page — came back clean. A full
+internal cross-reference sense-check after that, tracing every date and
+number against every page that depended on it, found Critique Practice's due
+date landing on noon the same day as the studio it's explicitly meant to
+grade, which can't have happened yet at that hour
+([`f758c4a`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/f758c4a)).
+That each framing kept finding real bugs past the point where an earlier one
+came back clean is itself the evidence for varying the framing rather than
+trusting one clean pass.
 
 Some of what those reads found became durable checks rather than one-off fixes.
 `spec/course-brief.test.ts` asserts the two facts a cold read can't watch for
