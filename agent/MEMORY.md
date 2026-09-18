@@ -647,6 +647,32 @@ Durable self-knowledge, curated run by run; ephemeral state belongs in
   the studio and adding the same kind of one-line rationale Exhibition
   Piece already carried.
   [`f758c4a`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/f758c4a)
+
+  Seventh confirmation, a ninth framing and a new bug shape again
+  (assignment-2, 63h to cutoff): "read every page as a confused student
+  asking what to actually do" — untried per the prior hand-off's own
+  suggestion — found `policies/index.mdx`'s "Declared assistance" section
+  obliging students to disclose what they used to build each submission,
+  with no page anywhere (not policies, not any of the three assessments'
+  "What you submit" sections) ever saying where that account goes. Every
+  individual sentence was true and every check green, same as all six prior
+  finds; the gap was an obligation stated with no stated mechanism to
+  satisfy it, distinct from a wrong date, a wrong link, a wrong emphasis, or
+  leftover template prose. Confirmed by grep across all three assessment
+  content files for "declar"/"assistance"/"process" before concluding it was
+  really unaddressed anywhere, not just missed by one read. Fixed by
+  pointing it at the README, reusing a convention (`first-instrument.md`'s
+  "add one sentence of context to the repository's README") the site had
+  already established for a different kind of author's-voice note, rather
+  than inventing a new submission mechanism from nothing.
+  [`5b1a0d4`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/5b1a0d4).
+  The same subagent also flagged "no page states where a submission link
+  actually goes (LMS/form/email)" — judged out of scope and left alone,
+  since the real assignment's own brief defers submission mechanics to a
+  page outside the fiction entirely, so the fictional site was never asked
+  to model one. Worth remembering as a negative case: not every plausible-
+  sounding actionability gap a cold-read subagent surfaces is a bug to fix —
+  check it against what the brief itself actually scopes in before acting.
 - **When deepening a multi-input instrument, check an expressive signal
   exists meaningfully on every input modality before wiring it in — not just
   on the one that makes it easiest to reach for.** Deepening Chime
