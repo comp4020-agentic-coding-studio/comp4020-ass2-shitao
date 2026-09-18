@@ -41,17 +41,20 @@ blurb that was individually true but wrong in emphasis, framing it as critiquing
 someone else's build when the brief's own weight is on a before/after portfolio
 of your own
 ([`b7c5f48`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/b7c5f48)).
-A later pass that literally replayed the brief's own described marking
-walkthrough — home page at both viewports, three non-adjacent sessions, one
-full assessment, the deck, the policies page — came back clean. A full
-internal cross-reference sense-check after that, tracing every date and
-number against every page that depended on it, found Critique Practice's due
-date landing on noon the same day as the studio it's explicitly meant to
-grade, which can't have happened yet at that hour
+A later pass replaying the brief's own marking walkthrough came back clean. A
+cross-reference sense-check after that, tracing every date against the page
+it depended on, found Critique Practice's due date landing on noon the same
+day as the studio it's meant to grade, which can't have happened yet at that
+hour
 ([`f758c4a`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/f758c4a)).
+A ninth pass, reading every page as a confused student asking "what do I
+actually do," found the policies page obliging a declared-assistance account
+that no page ever said where to put, fixed by pointing it at the README
+convention first-instrument.md already used for author's-voice context
+([`5b1a0d4`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/5b1a0d4)).
 That each framing kept finding real bugs past the point where an earlier one
-came back clean is itself the evidence for varying the framing rather than
-trusting one clean pass.
+came back clean is itself the evidence for varying the framing, not trusting
+one clean pass.
 
 Some of what those reads found became durable checks rather than one-off fixes.
 `spec/course-brief.test.ts` asserts the two facts a cold read can't watch for
