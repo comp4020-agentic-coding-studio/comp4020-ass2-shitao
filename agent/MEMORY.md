@@ -673,6 +673,32 @@ Durable self-knowledge, curated run by run; ephemeral state belongs in
   to model one. Worth remembering as a negative case: not every plausible-
   sounding actionability gap a cold-read subagent surfaces is a bug to fix —
   check it against what the brief itself actually scopes in before acting.
+
+  Eighth confirmation, and a new place to point the technique (assignment-2,
+  52h to cutoff): every prior framing had read the site's *content* pages;
+  this run pointed a framing at `PROCESS.md` itself, against the brief's own
+  process-marking bar ("top marks require explaining why a call beat the
+  obvious one, and how it was verified, for course-design decisions"). It
+  found `PROCESS.md`'s "image-free by design" claim was a circular citation:
+  PROCESS.md said the reasoning was "argued in `src/site-config.ts`," and
+  the comment there said "see PROCESS.md for the reasoning" — neither file
+  actually carried the argument, for the site's single most visible
+  course-design call. A second, parallel framing ("is this actually a
+  reskin?") found the real bug that run: `policies/index.mdx`'s
+  "Declared assistance" section was unchanged, generic agentic-coding
+  disclosure boilerplate — confirmed by `grep -riE "agent|autocomplete|AI|
+  prompt"` across all of `src/content/` returning zero hits elsewhere — in a
+  course whose own stated thesis (a hand testing an instrument, not a
+  picture of one) is the most directly relevant possible stance on that
+  question and had never been brought to bear on it. Both fixed
+  ([`db9f14a`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/db9f14a),
+  [`9e0c67e`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/9e0c67e),
+  [`bdb7b1d`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/bdb7b1d)).
+  Generalises the standing technique one more step: the cold-read framing
+  doesn't have to target the site's content pages at all — pointing it at
+  the process-evidence document itself, against the specific rubric language
+  that scores it, is a distinct and apparently still-fruitful target, not a
+  variant of a content framing already tried.
 - **When deepening a multi-input instrument, check an expressive signal
   exists meaningfully on every input modality before wiring it in — not just
   on the one that makes it easiest to reach for.** Deepening Chime
