@@ -27,7 +27,9 @@ export const siteConfig = defineSiteConfig({
     { text: "Policies", href: "/policies/" },
   ],
 
-  // Image-free by design: an instrument earns its page through what it does,
-  // not a banner. See PROCESS.md for the reasoning.
+  // Image-free by design: the starter's hero banner and per-person portraits
+  // are exactly the kind of static picture the course argues against — an
+  // instrument earns its page through what it does. See PROCESS.md for the
+  // fuller argument and how it was verified.
   licence: "CC-BY-NC-SA-4.0",
 });
