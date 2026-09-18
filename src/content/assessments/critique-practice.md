@@ -4,7 +4,7 @@ description:
   How you used the crit format across the semester — the feedback you gave,
   and what you did with the feedback you got
 week: 12
-due: 2027-05-10T12:00:00+10:00
+due: 2027-05-13T12:00:00+10:00
 weight: 15
 marking:
   mode: holistic
@@ -42,3 +42,7 @@ giving it.
 There is no marking table here because the thing being judged --- whether
 feedback actually changed a decision --- doesn't decompose into separately
 weighted parts the way a build's features do.
+
+The due date sits a few days after the final studio, not on it: this
+portfolio is asked to cover every studio "this one included," and you can't
+write down what you gave or got in a crit before you've sat through it.
