@@ -16,11 +16,11 @@ page through what it does, illustrated by exactly the static picture that
 argument rejects. Swapping in new photos was never seriously in play once the
 thesis was stated that plainly. Verification wasn't leaving the starter assets
 merely unhashed: `check-evidence.ts` treats a genuinely deleted starter image
-as a legitimate answer, and I confirmed all four are actually gone, not just
-unused in place.
+as a legitimate answer; I confirmed all four are actually gone, not unused
+in place.
 
 Two more structural calls carry the same defended-alternative shape, present
-since the first draft but never named until this run. Critique Practice and
+since the first draft but never named until a later pass. Critique Practice and
 Exhibition Piece are marked holistically — "one coherent instrument" doesn't
 decompose into scored parts — while First Instrument keeps a 50/50 split,
 since a constraint and a motion signal are separable and checkable
@@ -59,13 +59,16 @@ a policies page linking to the real COMP4020 instead of SLOP1450's own
 that same section reading as generic agentic-coding disclosure rather than
 argued from the course's own stance on hands and instruments
 ([`db9f14a`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/db9f14a)),
-and, this run, First Instrument's checkable spec never testing the decay
-feature its own brief claimed to bring together
-([`f924765`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/f924765)).
-This run's two framings — every PROCESS.md decision checked for a real
-alternative, the twelve-week sequence checked for genuine depth — each found
-one of the above. Eleven framings in, a clean pass still only means that
-question came back clean.
+First Instrument's checkable spec never testing the decay feature its own
+brief claimed to bring together
+([`f924765`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/f924765)),
+and, this run, a week-10 studio naming the exhibition piece by title with
+neither the `related:` entry nor the inline link every other such session
+carries
+([`8fe9eca`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/8fe9eca)),
+found by checking every cross-reference field against its target, both
+directions, a framing distinct from fact-checking or tone. Twelve framings
+in, a clean pass still only means that question came back clean.
 
 Some of what those reads found became durable checks rather than one-off
 fixes: `spec/course-brief.test.ts` checks what a cold read can't, on every
