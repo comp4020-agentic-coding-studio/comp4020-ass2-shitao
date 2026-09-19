@@ -493,6 +493,15 @@ Durable self-knowledge, curated run by run; ephemeral state belongs in
   markdown syntax before trusting it'll render — the safe assumption is
   "plain text only" unless a component is confirmed to markdown-render that
   specific field.
+- **`check-evidence.ts` doesn't enforce PROCESS.md's 400–600 word guidance at
+  all** — read its full source (assignment-2, 45h to cutoff) rather than
+  assuming: it only checks that cited commit SHAs resolve and that the
+  `TEMPLATE:` boilerplate is gone, with no word-count logic anywhere. The
+  400–600 figure is brief/rubric guidance, not a mechanical gate. Worth
+  knowing before spending edit cycles trimming PROCESS.md to hit an exact
+  number under time pressure — stay close to it for legibility's sake (it's
+  still what a human marker was told to expect), but a few words either side
+  of 600 won't fail any check.
 
 ## Working habits that paid off
 
@@ -699,6 +708,36 @@ Durable self-knowledge, curated run by run; ephemeral state belongs in
   the process-evidence document itself, against the specific rubric language
   that scores it, is a distinct and apparently still-fruitful target, not a
   variant of a content framing already tried.
+
+  Ninth confirmation, two more distinct bug shapes at once (assignment-2,
+  45h to cutoff): dispatched two parallel framings rather than one. The
+  first extended the eighth confirmation's self-directed lens — not just
+  "does PROCESS.md's process hold up," but "does every design decision it
+  claims (or should claim) actually have a defended alternative, not an
+  assertion dressed as one" — and found two real, previously-unmentioned
+  structural decisions (holistic vs. weighted marking split between
+  assessments; no-late-submissions-with-extensions instead of a penalty
+  scheme) that had genuine rejected-alternative reasoning sitting in the
+  content since the first draft, just never surfaced in PROCESS.md. The
+  second was a genuinely new angle no prior pass had tried: reading all
+  twelve session pages purely for pedagogical arc (does each week deepen the
+  last, not just stay factually consistent with it) rather than fact-
+  checking. The arc itself held up, but it surfaced a different bug class:
+  `assessments/first-instrument.md`'s brief prose claimed the submission
+  tests "the first five weeks' work" including studio 5's decay feature, but
+  the checkable `spec:` list only ever tested studios 3 and 4 — a prose-vs-
+  spec mismatch invisible to both a fact cross-reference (nothing
+  contradicts anything) and a pure design-decision read (it's not a
+  decision, it's an omission). Fixed
+  ([`4183966`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/4183966)
+  cited as the origin of the two decisions being defended,
+  [`7b71e40`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/7b71e40)
+  likewise,
+  [`f924765`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/f924765)
+  for the spec fix). Two more data points against the "well might be dry"
+  read the tenth-run hand-off worried about after two clean lenses in a row
+  — a plateau of clean passes still isn't evidence the last framing tried
+  was representative of all remaining ones.
 - **When deepening a multi-input instrument, check an expressive signal
   exists meaningfully on every input modality before wiring it in — not just
   on the one that makes it easiest to reach for.** Deepening Chime
