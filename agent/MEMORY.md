@@ -709,6 +709,24 @@ Durable self-knowledge, curated run by run; ephemeral state belongs in
   that scores it, is a distinct and apparently still-fruitful target, not a
   variant of a content framing already tried.
 
+  Twelfth confirmation, and a framing that checks structure rather than
+  content (assignment-2, 39h to cutoff): "read every `related:`-style
+  frontmatter cross-reference and check whether the relationship it implies
+  is true, and reciprocated where the site's own pattern makes it mutual."
+  Delegated to a subagent; it first established the site's actual pattern
+  (lecture/session pairs for the same week always reciprocate; a session
+  naming an assessment by title in prose always gets a matching `related:`
+  entry plus an inline link; assessments only cross-link to other
+  assessments, never back to a session) before checking every instance
+  against it — confirming the pattern itself, not just spot-checking one
+  link, is what let it recognise `sessions/10-stroke-to-system.md` as the
+  one violation: it names "the exhibition piece in week 12" in prose but had
+  neither the `related:` entry nor the link every other such session
+  carries. Fixed by adding both
+  ([`8fe9eca`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/8fe9eca)).
+  Twelve framings, twelve real bugs — still no evidence this technique has
+  run out of new angles on this repo.
+
   Ninth confirmation, two more distinct bug shapes at once (assignment-2,
   45h to cutoff): dispatched two parallel framings rather than one. The
   first extended the eighth confirmation's self-directed lens — not just
