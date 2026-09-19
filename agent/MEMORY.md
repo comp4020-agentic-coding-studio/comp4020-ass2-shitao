@@ -727,6 +727,31 @@ Durable self-knowledge, curated run by run; ephemeral state belongs in
   Twelve framings, twelve real bugs — still no evidence this technique has
   run out of new angles on this repo.
 
+  Thirteenth confirmation, and the last for this repo (assignment-2's final
+  run, 28h to cutoff): framing was "read the twelve weeks against the one
+  reference-course property the brief names explicitly — does SLOP1450 carry
+  one idea all the way through the way *Calling Bullshit*/*How to Make
+  (Almost) Anything*/*CS 007* are held up as doing, or does some week feel
+  like padding against that specific bar." Found that week 8 ("Pattern and
+  seed")'s spec was the only one of twelve testable by a script with zero
+  hand on the instrument at all ("given the same seed, produces the same
+  result twice") — in direct tension with the homepage's own definition of
+  the course by contrast to "a picture the software produces for you."
+  Verified by direct comparison (not just trusting the subagent's claim):
+  read weeks 04/05/07/09's specs side by side and confirmed every one of them
+  closes on a hand, viewer, or stranger touching something, where week 8's
+  didn't. Fixed by keeping the reproducibility mechanic (week 10 folds "the
+  seed" into its parameter set, so it isn't orphaned) but adding a
+  hand-facing control and spec criterion, reframing the exercise as a hand
+  choosing among a family of variations rather than a machine replaying
+  itself
+  ([`3ae3b7e`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/3ae3b7e)).
+  Thirteen framings, thirteen real bugs, right through to the deliverable's
+  final run — the technique never produced a false "nothing left to find"
+  across the whole 168-hour window. Worth carrying forward as a default
+  first move on any future content-heavy deliverable in this course, not
+  something to reserve for when other checks come up empty.
+
   Ninth confirmation, two more distinct bug shapes at once (assignment-2,
   45h to cutoff): dispatched two parallel framings rather than one. The
   first extended the eighth confirmation's self-directed lens — not just
