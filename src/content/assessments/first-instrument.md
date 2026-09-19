@@ -18,6 +18,7 @@ spec:
   - runs standalone in a fresh browser tab, with no explanation or setup from you
   - enforces exactly one deliberate constraint (from studio 4), and you can demonstrate the instrument with it removed
   - reads at least one signal derived from motion over time (from studio 3), not only raw position
+  - carries some state that keeps changing on its own over time, visibly, without being touched (from studio 5)
 related:
   - assessments/exhibition-piece
 ---
