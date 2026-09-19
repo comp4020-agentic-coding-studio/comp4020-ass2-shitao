@@ -10,6 +10,8 @@ teachers:
 spec:
   - your instrument can produce more than one distinct output without you editing the code in between
   - you can show two such outputs side by side and name what stayed constant across them
+related:
+  - assessments/exhibition-piece
 ---
 
 ## Before the studio
@@ -24,8 +26,9 @@ seed --- becomes a set of parameters rather than a single fixed configuration.
 Run the instrument three times with different settings and look at the
 results together: what stays recognisably the same across all three is your
 instrument's actual identity, and it's usually narrower than you'd guessed
-before seeing them side by side. That constant is what the exhibition piece
-in week 12 has to make legible to someone who only ever sees one run of it.
+before seeing them side by side. That constant is what the
+[exhibition piece](/assessments/exhibition-piece/) in week 12 has to make
+legible to someone who only ever sees one run of it.
 
 ## Afterwards
 
