@@ -44,7 +44,7 @@ whole site against itself, each with a different framing, because each kept
 finding what the last one missed: a deck slide reusing the wrong week's prep
 text
 ([`595efe3`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/595efe3)),
-leftover template-author instructions live as course copy on three index pages
+leftover template instructions live as course copy on three index pages
 ([`49e3521`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/49e3521)),
 an unpaid forward reference
 ([`c7d67c2`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/c7d67c2)),
@@ -56,19 +56,24 @@ a declared-assistance obligation nowhere told to go
 ([`5b1a0d4`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/5b1a0d4)),
 a policies page linking to the real COMP4020 instead of SLOP1450's own
 ([`40fb8f8`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/40fb8f8)),
-that same section reading as generic agentic-coding disclosure rather than
-argued from the course's own stance on hands and instruments
+that same section reading as generic AI-disclosure boilerplate rather than
+argued from the course's own stance
 ([`db9f14a`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/db9f14a)),
-First Instrument's checkable spec never testing the decay feature its own
-brief claimed to bring together
+First Instrument's checkable spec never testing the decay feature its brief
+claimed to bring together
 ([`f924765`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/f924765)),
-and, this run, a week-10 studio naming the exhibition piece by title with
-neither the `related:` entry nor the inline link every other such session
-carries
+a week-10 studio naming the exhibition piece with no `related:` entry or link,
+unlike every other such session
 ([`8fe9eca`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/8fe9eca)),
-found by checking every cross-reference field against its target, both
-directions, a framing distinct from fact-checking or tone. Twelve framings
-in, a clean pass still only means that question came back clean.
+and, this run, week 8's spec — alone among twelve — testable by a script with
+no hand on the instrument at all, against a course whose homepage defines
+itself by contrast to exactly that: a picture the software produces, not a
+hand playing it
+([`3ae3b7e`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-shitao/commit/3ae3b7e)).
+That last one came from reading the twelve weeks against the one
+reference-course property the brief names explicitly: one idea carried all
+the way through. Thirteen framings in, a clean pass still only means that
+question came back clean.
 
 Some of what those reads found became durable checks rather than one-off
 fixes: `spec/course-brief.test.ts` checks what a cold read can't, on every
